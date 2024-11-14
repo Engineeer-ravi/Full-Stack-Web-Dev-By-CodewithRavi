@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: brown;
+            display: flex;
+            flex-direction: row;
+            width: 2500px;
+            margin: 4px;
+            padding: 4px;
+        }
+        #boxleft{
+            background-color: bisque;
+            border: 2px solid blueviolet;
+            width: 500%;
+            margin: 5px;
+            padding: 3px;
+            display: flex;
+            flex-direction: column;
+        }
+        #boxright{
+            background-color: rgb(222, 135, 135);
+            border: 2px solid blueviolet;
+            width: 500%;
+            margin: 5px;
+            padding: 3px;
+        }
+        p{
+            border: 5px solid red;
+            width: 500px;
+            height: 100px;
+        }
+        video{
+            border: 2px solid red;
+            width: 1200px;
+        }
+        @media (max-width:640px){
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="boxleft">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, esse.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dignissimos!</p>
+
+        </div>
+        <div id="boxright">
+            <video  controls src="lejare.mp4"> </video>
+
+        </div>
+    </div>
+</body>
+</html>
