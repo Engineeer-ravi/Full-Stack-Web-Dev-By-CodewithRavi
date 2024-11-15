@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shadow</title>
+    <style>
+      .container {
+        background-color: bisque;
+        height: 650px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        background-color: aquamarine;
+        width: 500px;
+        height: 400px;
+        border: 2px solid brown;
+        margin: 5px;
+        padding: 5px;
+        /*shadow effect*/
+        /*box-shadow: 10px 15px red;*/
+
+        /*shadow Effect Blur*/
+        /* box-shadow: 10px 15px 100px brown;*/
+
+        /*spread effect*/
+        /*box-shadow:10px 14px 5px 80px aqua ;*/
+
+        /*border in shadow*/
+        /*box-shadow: inset 10px 20px red;*/
+
+        /*multiple shadow effect*/
+        box-shadow: 10px 15px red, 15px 20px green;
+      }
+      .img {
+        margin: 2px;
+        padding: 1px;
+      }
+
+
+      /*text shadow effect*/
+      #head1 {
+        /*text-shadow: 12px 13px 4px white;*/
+        /* color | offset-x | offset-y | blur-radius */
+        /*text-shadow: #fc0 1px 0 10px;*/
+
+        /* offset-x | offset-y | color */
+        /*text-shadow: 5px 5px #558abb;*/
+
+        /* color | offset-x | offset-y */
+        /*text-shadow: white 2px 5px;*/
+
+        /* offset-x | offset-y
+           /* Use defaults for color and blur-radius */
+        /*text-shadow: 5px 10px;*/
+
+
+        /*multiple text shadow effect*/
+        text-shadow: 10px 15px 2 red, 12px 13px 2px green, 14px 15px 1px blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="codehelp.jpeg" alt="" />
+        <h1 id="head1">Welcome To CodeWith Ravi</h1>
+        <p>
+          Lorem ipsum dolor sit amet consenter, adipisicing emit. Kure sbquo
+          Nero album amet Mobis placed ex indentor provident banditti non?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
