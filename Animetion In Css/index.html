@@ -1,0 +1,79 @@
+<!-- This called animation occurs when an element or component shifts from a particular style to another style. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: aqua;
+            border: 5px solid black;
+        }
+        .box{
+            width: 400px;
+            height: 80px;
+            background-color: red;
+            border-radius:5px;
+            margin: 10px;
+            position: relative;
+            animation-name: rightMovement;
+            animation-duration: 5s;
+            animation-iteration-count: 3;
+            animation-delay: 1s;
+
+            /*Specify the Speed Curve of the Animation*/
+
+             /*linear - Specifies an animation with the same speed from start to end*/
+            /*animation-timing-function:linear ;*/
+
+            /*ease - Specifies an animation with a slow start, then fast, then end slowly (this is default)*/
+           /* animation-timing-function:ease ;*/
+
+           /*ease-in - Specifies an animation with a slow start*/
+            /*animation-timing-function:ease-in;*/
+
+           /*ease-out - Specifies an animation with a slow end*/
+           /*animation-timing-function:ease-out;*/
+
+           /*cubic-bezier(n,n,n,n) - Lets you define your own values in a cubic-bezier function*/
+           animation-timing-function:cubic-bezier(0.67, -0.44, 1, 0.1);
+
+
+
+
+
+
+
+
+        }
+        @keyframes rightMovement {
+            from{
+                top: 0;
+                left: 0;
+
+            }
+            to{
+                top: 0;
+                left: 1300px;
+
+            }
+            
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="box"></div>
+
+   </div>
+</body>
+</html>
